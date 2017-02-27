@@ -1,0 +1,39 @@
+<package>
+  <name>wam_node</name>
+  <version>1.0.0</version>
+  <description>Barrett Technology ROS node for 4-DOF and 7-DOF WAM to be run on WAM robot PC or external PC via CAN.</description>
+  <maintainer email="hm@barrett.com">robot</maintainer>
+
+  <license>GPL</license>
+
+  <url type="website">http://barrett.com/robot/index.htm</url>
+
+  <author>Kyle Maroney</author>
+  <author>Hariharasudan Malaichamee</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>bullet</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>wam_msgs</build_depend>
+  <build_depend>wam_srvs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>std_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>bullet</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>wam_msgs</run_depend>
+  <run_depend>wam_srvs</run_depend>
+
+</package>

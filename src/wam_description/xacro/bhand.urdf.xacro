@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <property name="M_PI" value="3.14159265358979323"/>
+
+    <xacro:include filename="$(find wam_description)/xacro/bhand_fingers.urdf.xacro"/>
+
+    <xacro:macro name="bhand" params="parent">
+
+        <!-- The main hand -->
+        <link name="bhand_base_link">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_base.stl"/>
+                </geometry>
+                <material name="Grey">
+                    <color rgba="0.5 0.5 0.5 1.0"/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_base.stl"/>
+                </geometry>
+                <contact_coefficients kd="1.0" kp="1000.0" mu="0"/>
+            </collision>
+        </link>
+        <joint name="bhand_joint_fixed" type="fixed">
+            <parent link="${parent}"/>
+            <child link="bhand_base_link"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <axis xyz="0 0 1"/>
+            <limit lower="0.0" upper="${M_PI}" effort="30" velocity="2.0"/>
+        </joint>
+    
+    
+        <!-- Finger 1, link 1 -->
+        <link name="bhand_finger1_link_1">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_link1.stl"/>
+                </geometry>
+                <material name="Grey">
+                    <color rgba="0.5 0.5 0.5 1.0"/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_link1.stl"/>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="bhand_spread" type="revolute">
+            <parent link="bhand_base_link"/>
+            <child link="bhand_finger1_link_1"/>
+            <origin xyz="0 -0.025 0.133" rpy="0 0 0"/>
+            <axis xyz="0 0 -1"/>
+            <limit lower="0.0" upper="${M_PI}" effort="30" velocity="2.0"/>
+        </joint>
+    
+        <!-- Finger 2, link 1 -->
+        <link name="bhand_finger2_link_1">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_link1.stl"/>
+                </geometry>
+                <material name="Grey">
+                    <color rgba="0.5 0.5 0.5 1.0"/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_link1.stl"/>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="bhand_spread_finger2" type="revolute">
+            <parent link="bhand_base_link"/>
+            <child link="bhand_finger2_link_1"/>
+            <origin xyz="0 0.025 0.133" rpy="0 0 0"/>
+            <axis xyz="0 0 1"/>
+            <limit lower="0.0" upper="${M_PI}" effort="30" velocity="2.0"/>
+            <mimic joint="bhand_spread" multiplier="1.0" offset="0"/>
+        </joint>
+    
+        <!-- Finger 3, link 1 -->
+        <!-- Note that Finger 3 is the fixed one! -->
+        <link name="bhand_finger3_link_1">
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_link1.stl"/>
+                </geometry>
+                <material name="Grey">
+                    <color rgba="0.5 0.5 0.5 1.0"/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="package://wam_description/mesh/bh_link1.stl"/>
+                </geometry>
+            </collision>
+        </link>
+        <joint name="bhand_finger3_joint_1" type="fixed">
+            <parent link="bhand_base_link"/>
+            <child link="bhand_finger3_link_1"/>
+            <origin xyz="0 0 0.133" rpy="0 0 ${M_PI}"/>
+        </joint>
+    
+        <xacro:bhfinger finger="1"/>
+        <xacro:bhfinger finger="2"/>
+        <xacro:bhfinger finger="3"/>
+
+    </xacro:macro>
+
+</robot>

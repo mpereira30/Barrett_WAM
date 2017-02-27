@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/install
+
+Name: moveit_tests
+Description: Description of moveit_tests
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/marcus/catkin_ws_WAM/install/lib 
+Requires: moveit_core roscpp moveit_ros_planning_interface interactive_markers

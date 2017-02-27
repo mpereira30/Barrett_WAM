@@ -1,0 +1,2 @@
+barrett_model:barrett_moveit/barrett_wam_moveit_config:camera_control_msgs:moveit_tests:perception_palm:pylon_camera:tf_listen:vision_mbzirc:wam_common/wam_common:wam_common/wam_msgs:wam_common/wam_teleop:wam_description:wam_robot/wam_node:wam_robot/wam_robot
+-DCATKIN_DEVEL_PREFIX=/home/marcus/catkin_ws_WAM/devel -DCMAKE_INSTALL_PREFIX=/home/marcus/catkin_ws_WAM/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/devel
+
+Name: vision_mbzirc
+Description: Description of vision_mbzirc
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/marcus/catkin_ws_WAM/devel/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs

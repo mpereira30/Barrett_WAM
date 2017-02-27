@@ -1,0 +1,4 @@
+<launch>
+  <node name="vision_mbzirc" type="vision_mbzirc" pkg="vision_mbzirc" output="screen" />
+</launch>
+

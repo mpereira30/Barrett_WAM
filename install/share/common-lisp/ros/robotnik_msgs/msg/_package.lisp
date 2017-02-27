@@ -1,0 +1,33 @@
+(cl:defpackage robotnik_msgs-msg
+  (:use )
+  (:export
+   "<MOTORSSTATUS>"
+   "MOTORSSTATUS"
+   "<PTZ>"
+   "PTZ"
+   "<AXIS>"
+   "AXIS"
+   "<INTERFACES>"
+   "INTERFACES"
+   "<MOTORSTATUS>"
+   "MOTORSTATUS"
+   "<BATTERYSTATUS>"
+   "BATTERYSTATUS"
+   "<ALARMS>"
+   "ALARMS"
+   "<INVERTERSTATUS>"
+   "INVERTERSTATUS"
+   "<STATE>"
+   "STATE"
+   "<DATA>"
+   "DATA"
+   "<INPUTS_OUTPUTS>"
+   "INPUTS_OUTPUTS"
+   "<ENCODERS>"
+   "ENCODERS"
+   "<MOTORSSTATUSDIFFERENTIAL>"
+   "MOTORSSTATUSDIFFERENTIAL"
+   "<ALARMSENSOR>"
+   "ALARMSENSOR"
+  ))
+

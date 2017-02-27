@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/install
+
+Name: camera_control_msgs
+Description: Description of camera_control_msgs
+Version: 0.0.14
+Cflags: -I/home/marcus/catkin_ws_WAM/install/include
+Libs: -L/home/marcus/catkin_ws_WAM/install/lib 
+Requires: actionlib_msgs message_runtime sensor_msgs

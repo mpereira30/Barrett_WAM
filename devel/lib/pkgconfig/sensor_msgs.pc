@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/devel
+
+Name: sensor_msgs
+Description: Description of sensor_msgs
+Version: 1.12.5
+Cflags: -I/home/marcus/catkin_ws_WAM/devel/include -I/home/marcus/catkin_ws_WAM/src/sensor_msgs/include
+Libs: -L/home/marcus/catkin_ws_WAM/devel/lib 
+Requires: geometry_msgs message_runtime std_msgs

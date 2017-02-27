@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/devel
+
+Name: pylon_camera
+Description: Description of pylon_camera
+Version: 0.7.1
+Cflags: -I/home/marcus/catkin_ws_WAM/src/pylon_camera/include
+Libs: -L/home/marcus/catkin_ws_WAM/devel/lib -lpylon_camera
+Requires: actionlib camera_control_msgs camera_info_manager cv_bridge image_geometry camera_info_manager image_transport roscpp roslaunch sensor_msgs

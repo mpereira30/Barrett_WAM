@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marcus/catkin_ws_WAM/src/perception_palm/include/MCP2210-Library/hidapi.h
+wchar.h
+-
+
+/home/marcus/catkin_ws_WAM/src/perception_palm/include/MCP2210-Library/mcp2210.h
+cstdlib
+-
+stdio.h
+-
+wchar.h
+-
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+stdint.h
+-
+hidapi.h
+/home/marcus/catkin_ws_WAM/src/perception_palm/include/MCP2210-Library/hidapi.h
+
+/home/marcus/catkin_ws_WAM/src/perception_palm/include/MCP2210-Library/ppalm_driver.cpp
+ppalm_driver.h
+/home/marcus/catkin_ws_WAM/src/perception_palm/include/MCP2210-Library/ppalm_driver.h
+iomanip
+-
+
+/home/marcus/catkin_ws_WAM/src/perception_palm/include/MCP2210-Library/ppalm_driver.h
+cstdlib
+-
+fstream
+-
+mcp2210.h
+/home/marcus/catkin_ws_WAM/src/perception_palm/include/MCP2210-Library/mcp2210.h
+iostream
+-
+

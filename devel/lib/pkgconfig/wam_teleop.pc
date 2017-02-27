@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/devel
+
+Name: wam_teleop
+Description: Description of wam_teleop
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/marcus/catkin_ws_WAM/devel/lib 
+Requires: roscpp sensor_msgs std_srvs wam_msgs tf

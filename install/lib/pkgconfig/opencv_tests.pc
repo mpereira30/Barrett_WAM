@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/install
+
+Name: opencv_tests
+Description: Description of opencv_tests
+Version: 1.12.4
+Cflags: 
+Libs: -L/home/marcus/catkin_ws_WAM/install/lib 
+Requires: 

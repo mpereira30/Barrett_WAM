@@ -1,0 +1,8 @@
+prefix=/home/peter/catkin_ws/src/ros-wam/wam_description/devel
+
+Name: wam_description
+Description: Description of wam_description
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/peter/catkin_ws/src/ros-wam/wam_description/devel/lib 
+Requires: 

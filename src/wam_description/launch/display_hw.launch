@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="model" default="$(find wam_description)/xacro/wam.urdf.xacro"/>
+
+    <!-- Automagically generate the URDF file, from the xacro -->
+  <param name="robot_description" command="$(find xacro)/xacro '$(find wam_description)/xacro/wam.urdf.xacro'" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find wam_description)/launch/urdf.rviz" required="true" />
+</launch>

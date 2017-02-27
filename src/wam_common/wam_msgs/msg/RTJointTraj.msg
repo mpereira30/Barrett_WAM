@@ -1,0 +1,10 @@
+float64[] j1
+float64[] j2
+float64[] j3
+float64[] j4
+float64[] j5
+float64[] j6
+float64[] j7
+float64[] TS
+float32 size
+float32 Hz

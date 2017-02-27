@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/devel
+
+Name: perception_palm
+Description: Description of perception_palm
+Version: 0.0.0
+Cflags: -I/home/marcus/catkin_ws_WAM/src/perception_palm/include
+Libs: -L/home/marcus/catkin_ws_WAM/devel/lib 
+Requires: message_runtime wam_msgs

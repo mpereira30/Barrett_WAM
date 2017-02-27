@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/devel
+
+Name: barrett_wam_moveit_config
+Description: Description of barrett_wam_moveit_config
+Version: 0.3.1
+Cflags: 
+Libs: -L/home/marcus/catkin_ws_WAM/devel/lib 
+Requires: 

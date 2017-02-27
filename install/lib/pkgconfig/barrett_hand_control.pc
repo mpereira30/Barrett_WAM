@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/install
+
+Name: barrett_hand_control
+Description: Description of barrett_hand_control
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/marcus/catkin_ws_WAM/install/lib 
+Requires: 

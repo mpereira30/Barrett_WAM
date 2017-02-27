@@ -1,0 +1,4 @@
+<launch>
+  <node name="moveit_tests" type="moveit_tests" pkg="moveit_tests" output="screen" />
+</launch>
+

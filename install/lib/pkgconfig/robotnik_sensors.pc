@@ -1,0 +1,8 @@
+prefix=/home/marcus/catkin_ws_WAM/install
+
+Name: robotnik_sensors
+Description: Description of robotnik_sensors
+Version: 1.0.3
+Cflags: 
+Libs: -L/home/marcus/catkin_ws_WAM/install/lib 
+Requires: 
