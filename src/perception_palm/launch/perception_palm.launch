@@ -16,7 +16,7 @@
         <param name="height" type="int" value="480" />
         <param name="fps" type="int" value="30" />
         <param name="frame" type="string" value="monocular_camera" />
-        <param name="device" type="string" value="/dev/video1" />
+        <param name="device" type="string" value="/dev/video0" />
     </node>
      
     <node pkg="perception_palm" type="perception_palm_node" name="perception_palm_node" output="screen" cwd="node"/>

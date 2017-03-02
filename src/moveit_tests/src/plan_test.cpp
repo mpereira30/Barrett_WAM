@@ -57,7 +57,7 @@ int main(int argc, char **argv)
   attached_object_2.object.id = "box-2";
   pose.position.x = -0.55;
   pose.position.y = 0;
-  pose.position.z = -0.03;
+  pose.position.z = 0.04;
   attached_object_2.object.primitives.push_back(primitive);
   attached_object_2.object.primitive_poses.push_back(pose);
   attached_object_2.object.operation = attached_object_2.object.ADD;
@@ -134,7 +134,7 @@ int main(int argc, char **argv)
   attached_object_7.object.id = "box-7";
   pose.position.x = -0.45;
   pose.position.y = 0.39;
-  pose.position.z = -0.03;
+  pose.position.z = 0.04;
   primitive.dimensions[0] = 0.45;
   primitive.dimensions[1] = 0.45;
   primitive.dimensions[2] = 0.45;
@@ -150,7 +150,7 @@ int main(int argc, char **argv)
   attached_object_8.object.id = "box-8";
   pose.position.x = -0.45;
   pose.position.y = -0.39;
-  pose.position.z = -0.03;
+  pose.position.z = 0.04;
   primitive.dimensions[0] = 0.45;
   primitive.dimensions[1] = 0.45;
   primitive.dimensions[2] = 0.45;

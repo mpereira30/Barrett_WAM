@@ -63,6 +63,7 @@ wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop
  /opt/ros/indigo/include/ros/wall_timer.h
  /opt/ros/indigo/include/ros/wall_timer_options.h
  /opt/ros/indigo/include/rosconsole/macros_generated.h
+ /opt/ros/indigo/include/std_msgs/Float32.h
  /opt/ros/indigo/include/std_msgs/Header.h
  /opt/ros/indigo/include/std_srvs/Empty.h
  /opt/ros/indigo/include/std_srvs/EmptyRequest.h

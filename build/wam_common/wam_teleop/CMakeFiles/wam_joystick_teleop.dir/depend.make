@@ -62,6 +62,7 @@ wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop
 wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop.cpp.o: /opt/ros/indigo/include/ros/wall_timer.h
 wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop.cpp.o: /opt/ros/indigo/include/ros/wall_timer_options.h
 wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop.cpp.o: /opt/ros/indigo/include/rosconsole/macros_generated.h
+wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop.cpp.o: /opt/ros/indigo/include/std_msgs/Float32.h
 wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop.cpp.o: /opt/ros/indigo/include/std_srvs/Empty.h
 wam_common/wam_teleop/CMakeFiles/wam_joystick_teleop.dir/src/wam_joystick_teleop.cpp.o: /opt/ros/indigo/include/std_srvs/EmptyRequest.h

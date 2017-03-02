@@ -35,6 +35,8 @@ sensor_msgs/Joy.h
 /home/marcus/catkin_ws_WAM/src/wam_common/wam_teleop/src/sensor_msgs/Joy.h
 std_srvs/Empty.h
 /home/marcus/catkin_ws_WAM/src/wam_common/wam_teleop/src/std_srvs/Empty.h
+std_msgs/Float32.h
+/home/marcus/catkin_ws_WAM/src/wam_common/wam_teleop/src/std_msgs/Float32.h
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
@@ -731,6 +733,22 @@ ros/forwards.h
 /opt/ros/indigo/include/ros/ros/forwards.h
 
 /opt/ros/indigo/include/rosconsole/macros_generated.h
+
+/opt/ros/indigo/include/std_msgs/Float32.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/indigo/include/std_msgs/Header.h
 string

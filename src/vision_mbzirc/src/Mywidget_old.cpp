@@ -5,7 +5,6 @@
 
 #include "iostream"
 #include <ctime>
-#include <map>
 
 // ROS stuff:
 #include <image_transport/image_transport.h>
@@ -15,8 +14,6 @@
 
 using namespace std;
 using namespace cv;
-
-std::map<int, int> wrenchHeights;
 
 class ImageConverter
 {
@@ -34,20 +31,11 @@ public:
   void doMorphologicalOperations(cv::Mat);
   Mat getWrench(cv::Mat, int);  
   void imageCb(const sensor_msgs::ImageConstPtr&);
-  void drawReferenceCircles(cv::Mat frame);
 
 };
 
 void ImageConverter::imageCb(const sensor_msgs::ImageConstPtr& msg)
 {
-    // Initialise wrench heights
-    wrenchHeights[16] = 0;
-    wrenchHeights[17] = 1;
-    wrenchHeights[18] = 2;
-    wrenchHeights[19] = 3;
-    wrenchHeights[22] = 4;
-    wrenchHeights[24] = 5;
-
     cv_bridge::CvImagePtr cv_ptr;
     try
     {
@@ -61,35 +49,9 @@ void ImageConverter::imageCb(const sensor_msgs::ImageConstPtr& msg)
 
     //ROS_INFO("In CB now");
 
-    // this->doMorphologicalOperations(cv_ptr->image);
-    this->drawReferenceCircles(cv_ptr->image);
+    this->doMorphologicalOperations(cv_ptr->image);
 
 }
-
-void ImageConverter::drawReferenceCircles(cv::Mat frame)
-{
-    if(frame.empty())
-        return;
-
-    int radius = 1;
-    double scale = 0.5;
-    int centerX = frame.rows / 2;
-    int centerY = frame.cols / 2;
-
-    for (std::map<int,int>::iterator it=wrenchHeights.begin(); it!=wrenchHeights.end(); ++it)
-    {
-        radius = int(sqrt(2.0) * (it->first) * (it->first) * 0.5 * scale);
-        circle(frame, Point(centerY, centerX), radius, cv::Scalar(0, 0, 255));
-    }
-
-    circle(frame, Point(centerY, centerX), 50, cv::Scalar(0, 0, 255));
-    line(frame, Point((centerY - 5), centerX), Point((centerY + 5), centerX), cv::Scalar(0, 0, 255));
-    line(frame, Point(centerY, (centerX - 5)), Point(centerY, (centerX+5)), cv::Scalar(0, 0, 255));
-
-    imshow("frame", frame);
-    cv::waitKey(30);
-}
-
 
 void ImageConverter::doMorphologicalOperations(cv::Mat frame)
 {
